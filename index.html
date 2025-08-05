@@ -1,24 +1,819 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asesoría y Consultoría integral en los procesos de asistencia humana">
-    <title>Asertar - Asesorías y Consultoría</title>
-    <style type="text/css">
-        body{
-            max-width: 1080px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    </style>
+    <title>Asertar</title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="images/x-icon"/>
+
+    <!-- css include -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/rs6.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
+
+<style type="text/css">
+    /* Asertar Css*/
+    .color-asertar{
+        color: #2AAAE2; 
+    }
+
+    .bg-slide-asertar{
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    .somos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-column, .text-column {
+      flex: 1 1 400px;
+    }
+
+    .image-column img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .text-column h2 {
+      color: #2AAAE2;
+      margin-top: 0;
+    }
+
+    .text-column p {
+      color: #444;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  </style>
+
 <body>
 
-    <section>
-        <img src="logotipo-asertar.svg" alt="">
-    </section>
+<!-- backtotop - start -->
+<div class="xb-backtotop">
+    <a href="#" class="scroll">
+        <i class="far fa-arrow-up"></i>
+    </a>
+</div>
+<!-- backtotop - end -->
+
+<!-- preloader start -->
+<div id="xb-loadding" class="xb-loader"><div class="loading-spin"></div></div>
+<!-- preloader end -->
+
+<div class="body_wrap">
+
+    <!-- header start -->
+    <header id="xb-header-area" class="site-header header-default is-sticky">
+        <div class="xb-header__wrap xb-header-has-arrow xb-header">
+            <div class="container mxw_1710">
+                <div class="ul_li_between">
+                    <div class="xb-header__logo">
+                        <a href="index.html"><img class="w-50" src="img/logo/logotipo-asertar.png" alt=""></a>
+                    </div>
+
+                    <div class="main-menu__wrap ul_li navbar navbar-expand-lg">
+                        <nav class="main-menu collapse navbar-collapse">
+                            <ul>
+                                <li class="menu-item-has-children active"><a href="index.html"><span>Inicio</span></a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#somos"><span>Somos</span></a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#servicios"><span>Servicios</span></a>
+                                </li>
+                                <li><a href="#contacto"><span>Contacto</span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="xb-header-wrap">
+                            <div class="xb-header-menu">
+                                <div class="xb-header-menu-scroll">
+                                    <div class="xb-menu-close xb-hide-xl xb-close"></div>
+                                    <div class="xb-logo-mobile xb-hide-xl">
+                                        <a href="index.html" rel="home"><img src="img/logo/logo1.svg" alt=""></a></div>
+                                    <div class="xb-header-mobile-search xb-hide-xl">
+                                        <form role="search" action="#">
+                                            <input type="text" placeholder="Search..." name="s" class="search-field">
+                                        </form>
+                                    </div>
+                                    <nav class="xb-header-nav">
+                                        <ul class="xb-menu-primary clearfix">
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#"><span>Inicio</span></a>
+                                               
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#"><span>Somos</span></a>
+                                               
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#servicios"><span>Servicios</span></a>
+                                              
+                                            </li>
+
+                                            <li class="menu-item"><a href="#contacto"><span>Contacto</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="xb-header-menu-backdrop"></div>
+                        </div>
+                    </div>
+
+                    <div class="xb-hamburger-menu">
+                        <div class="xb-nav-mobile">
+                            <div class="xb-nav-mobile-button"><i class="fal fa-bars"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <div class="body-overlay"></div>
+    <main>
+
+        <!-- hero start -->
+        <section class="hero hero-default ul_li bg_img" data-bg-color="#E7E9EE" data-background="img/slider/slider-bg.png">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="hero-content">
+                        <div class="sec-title mb-80">
+                            <h1 class="color-asertar bg-slide-asertar" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Asesoría y Consultoría integral <br> en los procesos de asistencia humana</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero end -->
+
+        <div class="somos">
     
+            <!-- Columna 1: Imagen -->
+            <div class="image-column">
+            <img src="img/service/asertar-img.jpg" alt="Ejemplo" style="width: 100%; height: auto; border-radius: 8px;" />
+            </div>
+
+            <!-- Columna 2: Contenido -->
+            <div class="text-column" >
+            <h2 style="color: #2AAAE2; margin-top: 0;"><strong>QUIENES</strong> SOMOS</h2>
+            <p style="font-size: 16px; color: #444;">
+                Somos una empresa dedicada a la asesoría y consultoría integral en los procesos estratégicos y de apoyo, que responden de manera efectiva y eficiente, a las necesidades actuales de cada sector empresarial. Trabajamos conjuntamente para dar cumplimiento optimo a la legislación aplicable y con ello generar valor a su razón de ser.
+            </p>
+            </div>
+
+        </div>
+
+        <!-- feature start -->
+        <section class="feature feature-pb pt-150 pb-150" data-background="img/service/slider-service.jpg">
+            <div class="container px-60">
+                <div class="row align-items-start mt-none-30">
+                   
+                </div>
+            </div>
+        </section>
+        <!-- feature end -->
+
+
+
+        <!-- services start -->
+        <section id="servicios" class="services z-1 pos-rel pt-65 pb-150" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="row justify-content-center g-12 mt-none-12">
+
+                    <div class="col-lg-4">
+                        <div class="xb-service__sec-title mt-12">
+                            <div class="sec-title">
+                                <h2 class="title mb-20">NUESTROS <br> <span class="color-asertar">SERVICIOS</span></h2>
+                                <p>somos la mejor asesoría y consultoría integral en los procesos de asistencia humana</p>
+                            </div>
+                            <div class="xb-service__img">
+                                <img src="img/service/service-01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Servicio -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_08.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                   SEGURIDAD Y SALUD <span class="color-asertar">EN EL TRABAJO</span>
+                                </h3>
+                                <ul>
+                                    <li>Implementación y diseño del sistema de gestión</li>
+                                    <li>Acondicionamiento del sistema de gestión para el cumplimiento de la normatividad vigente</li>
+                                    <li>Acondicionamiento para la certificación en la norma ISO 45000</li>
+                                    <li>Auditoria para el cumplimiento de requisitos</li>
+                                    <li>Formación y capacitación empresarial para equipos de trabajo</li>
+                                    <li>Investigación de accidentes de trabajo</li>
+                                    <li>Certificación de trabajo en alturas</li>
+                                </ul>
+
+                                <p class="xb-item--content"> </p>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_03.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    ASESORÍA Y REPRESENTACIÓN <span class="color-asertar">JURÍDICA, LABORAL Y SOCIETARIA</span>
+                                </h3>
+                                <ul>
+                                    <li>Elaboración y actualización del reglamento interno de trabajo</li>
+                                    <li>Elaboración de contratos laborales</li>
+                                    <li>Aplicación de descargos y sanciones laborales</li>
+                                    <li>Actuaciones Judiciales</li>
+                                    <li>Elaboración y actualización de estatutos de constitución empresarial</li>
+                                    <li>Elaboración de documentos para la creación empresarial</li>
+                                    <li>Liquidación de sociedades</li>
+                                    <li>Elaboración y actualización de la matriz de requisitos legales</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="">
+                                <img src="img/service/service-03.jpg" alt="">
+                            </div>
+
+                            
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_04.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    FORMACIÓN <span class="color-asertar">Y DESARROLLO</span>
+                                </h3>
+                                <p>
+                                    Contamos con una amplia red de profesionales en diferentes oficiosy profesiones para desarrollar el personal, bajo diferentes técnicas y metodologías.
+                                </p>
+                                <ul>
+                                    <li>Conferencias adaptadas a las necesidades de la organización, con diferentes metodologías de integración y en concordancia con el lenguaje organizacional de la empresa</li>
+                                    <li>Talleres lúdicos, recreativos y dinámicos, para la obtención de conocimientos y adiestramiento de competencias organizacionales</li>
+                                    <li>Capacitaciones certificadas y adaptadas a las diferentes etapas de la organización</li>
+                                    <li>Ejecución del plan de formación de la empresa, de acuerdo a las necesidades identificadas en los planes de trabajo</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_07.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    SAGRILAFT – SARLAFT – PTEE – SIPLAF  <span class="color-asertar">- MATRIZ DE RIESGOS</span>
+                                </h3>
+                                <ul>
+                                    <li>Diseño e Implementación: Asesoría para el diseño e implementación del SAGRILAFT y SARLAFT, incluyendo la elaboración de manuales, políticas y procedimientos</li>
+                                    <li>Oficial de cumplimiento: Verificación y reporte de procedimientos y los correspondientes a la debida diligencia</li>
+                                    <li>Capacitación: para todo el personal involucrado en la gestión de riesgos LA/FT</li>
+                                    <li>Auditoría: Para el monitoreo de transacciones y operaciones sospechosas, así como para el desarrollo de controles internos</li>
+                                    <li>Actualización Normativa: Asesoría para la identificación, evaluación y gestión de los riesgos LA/FT.</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_06.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    GESTIÓN <span class="color-asertar">HUMANA</span>
+                                </h3>
+                                <ul>
+                                    <li>Selección de personal</li>
+                                    <li>Procesos basados por competencias</li>
+                                    <li>Procesos de inducción corporativa</li>
+                                    <li>Formación y capacitación de acuerdo al cargo y funciones</li>
+                                    <li>Evaluación del desempeño con diferentes metodologías</li>
+                                    <li>Evaluación del clima organizacional</li>
+                                    <li>Elaboración y actualización del manual de funciones</li>
+                                    <li>Estudio de puesto de trabajo</li>
+                                    <li>Estudio de salarios y escala de compensación</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <img src="img/service/service-02.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_05.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    NÓMINA ELECTRÓNICA <span class="color-asertar">Y SEGURIDAD SOCIAL</span>
+                                </h3>
+                                <ul>
+                                    <li>Elaboración y liquidación de nómina</li>
+                                    <li>Elaboración y liquidación de seguridad social</li>
+                                    <li>Elaboración y liquidación de prestaciones sociales</li>
+                                    <li>Elaboración y liquidación de contratos de trabajo</li>
+                                    <li>Estructuración de salarios: Compensación variable, flexible y emocional</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_06.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    PAQUETES DE <span class="color-asertar">HORAS EXTRAS</span>
+                                </h3>
+                                <ul>
+                                    <li>Evaluación de puestos de trabajo, con énfasis osteomuscular</li>
+                                    <li>Elaboración de documentos para solicitar la resolución al ministerio</li>
+                                    <li>Estudio de carga de trabajo por riesgo</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div> <!--div columna-->
+
+
+                    <!--Bloque Servicio-->
+                     <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_02.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                    RIESGO <span class="color-asertar">PSICOSOCIAL</span>
+                                </h3>
+                                <ul>
+                                    <li>Medición del riesgo psicosocial, con las baterías del ministerio de trabajo</li>
+                                    <li>Estudio de puestos de trabajo con énfasis psicosocial</li>
+                                    <li>Elaboración del sistema de vigilancia epidemiológica con énfasis psicosocial</li>
+                                    <li>Elaboración de planes de trabajo para el riesgo psicosocial</li>
+                                    <li>Acompañamiento psicológico al personal</li>
+                                    <li>Capacitaciones sobre manejo del estrés y bienestar emocional</li>
+                                    <li>Intervención en crisis y apoyo en situaciones laborales complejas</li>
+                                    <li>Evaluación y seguimiento de factores de riesgo psicosocial</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+
+                             <div class="">
+                                <img src="img/service/service-04.jpg" alt="">
+                            </div>
+
+                        </div>
+
+
+                     </div> <!--bloque cierre -->
+
+
+                      <!--Bloque Servicio-->
+                     <div class="col-lg-4 col-md-6">
+                          <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_09.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                   PLAN ESTRATÉGICO <span class="color-asertar">DE SEGURIDAD VIAL</span>
+                                </h3>
+                               <ul>
+                                    <li>Elaboración y actualización del plan estratégico de seguridad vial</li>
+                                    <li>Acondicionamiento y ejecución del plan estratégico de seguridad vial</li>
+                                    <li>Auditoría al plan estratégico de seguridad vial</li>
+                                    <li>Establecimiento de trabajo para el cumplimiento de los requisitos legales</li>
+                                    <li>Formación y capacitación en seguridad vial de acuerdo a los temas normativos y de aplicabilidad para la empresa</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--bloque cierre -->
+
+
+                      <!--Bloque Servicio-->
+                     <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="">
+                                <img src="img/service/service-03.jpg" alt="">
+                            </div>
+
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_03.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                   EXÁMENES MÉDICOS <span class="color-asertar">OCUPACIONALES (por convenio)</span>
+                                </h3>
+                                <ul>
+                                    <li>Elaboración del profesiograma por médico especialista</li>
+                                    <li>Realización de exámenes médicos de ingreso, periódicos y de retiro</li>
+                                    <li>Realización de exámenes de laboratorio y ayudas diagnósticas</li>
+                                    <li>Elaboración de perfil sociodemográfico</li>
+                                    <li>Elaboración del informe de condiciones de salud</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div><!--bloque cierre -->
+
+
+                      <!--Bloque Servicio-->
+                     <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_08.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                   SUMINISTRO DE ELEMENTOS <span class="color-asertar">DE PROTECCIÓN PERSONAL</span>
+                                </h3>
+                                <ul>
+                                    <li>Elaboración y actualización de la matriz de elementos de protección personal</li>
+                                    <li>Suministro y entrega de elementos de protección personal</li>
+                                    <li>Evaluación de materiales y elementos de protección de acuerdo a las condiciones de exposición del riesgo</li>
+                                </ul>
+                                
+                            </div>
+                            
+                        </div>
+                    </div><!--bloque cierre -->
+
+
+                      <!--Bloque Servicio-->
+                     <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="img/icon/srv_07.svg" alt="">
+                                </div>
+                                <h3 class="xb-item--title">
+                                   SISTEMA DE GESTIÓN <span class="color-asertar">DE CALIDAD Y AMBIENTAL</span>
+                                </h3>
+                                <ul>
+                                    <li>Implementación y diseño del sistema de gestión de calidad y/o ambiental</li>
+                                    <li>Acondicionamiento del sistema de gestión para el cumplimiento de la norma a certificar</li>
+                                    <li>Acondicionamiento para la certificación en la norma ISO 9001 y/o 14001</li>
+                                    <li>Formación y capacitación empresarial para equipos de trabajo</li>
+                                    <li>Elaboración y ejecución del sistema de gestión BASC cumpliendo normativa nacional e internacional</li>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <img src="img/shape/srv_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!--bloque cierre -->
+
+
+
+
+                </div>
+            </div>
+            <div class="xb-service__shape">
+                <div class="shape shape--1">
+                    <img data-parallax='{"y": "-90"}' src="img/shape/srv_shape1.png" alt="">
+                </div>
+                <div class="shape shape--2">
+                    <img data-parallax='{"y": "90"}' src="img/shape/srv_shape2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+    
+        <!-- team start -->
+        <section class="team bg_img pt-140 pb-140" data-background="img/bg/team_bg.jpg">
+            <div class="container px-60">
+                <div class="sec-title sec-title--white text-center mb-70" data-aos="fade-up" data-aos-duration="600">
+                    <span class="subtitle ul_li">Equipo</span>
+                    <h2 class="title">Nuestros Expertos</h2>
+                </div>
+                <div class="xb-swiper-sliders" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="xb-carousel-inner">
+                        <div class="xb-team-sldier xb-swiper-container swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <!-- slide Team -->
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">Juan David <span class="color-asertar">Osorio Patiño</span></h3>
+                                            <span class="xb-item--desig">CEO Asertar</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="img/team/team-01.jpg" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="img/shape/team_shape.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- slide Team -->
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">Intengrante</h3>
+                                            <span class="xb-item--desig">Asertar</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="img/team/team-02.jpg" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="img/shape/team_shape.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- slide Team -->
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">Intengrante</h3>
+                                            <span class="xb-item--desig">Asertar</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="img/team/team-02.jpg" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="img/shape/team_shape.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="pagination-style1 swiper-pagination style-white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team end -->
+
+    
+
+        <!-- contact start -->
+        <section class="contact z-1 pos-rel pb-120" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="xb-contact__wrap">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="xb-contact__inner">
+                                <div class="sec-title mb-45">
+                                    <span class="subtitle ul_li"><img src="img/icon/hr_icon.png" alt="">Escríbenos</span>
+                                    <h2 class="title">Te contactamos <br> para una mejor asesoría</h2>
+                                </div>
+                                <form action="#" class="xb-contact">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="img/icon/ins_user.svg" alt=""></span>
+                                                <input type="text" placeholder="Nombre Completo">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="img/icon/ins-sms-tracking.svg" alt=""></span>
+                                                <input type="email" placeholder="correo electrónico">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="img/icon/call-calling.svg" alt=""></span>
+                                                <input type="text" placeholder="Télefono">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="img/icon/ins-home-hashtag.svg" alt=""></span>
+                                                <select name="select" class="nice-select">
+                                                    <option value="1">Selecciona un Servicio</option>
+                                                    <option value="2">Gestion Humana</option>
+                                                    <option value="3">Riesgo Piscosocial</option>
+                                                    <option value="4">Sagrilaft</option>
+                                                    <option value="4">Asesoría</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="xb-item--field">
+                                                <span><img src="img/icon/messages-2.svg" alt=""></span>
+                                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe un Mensaje"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="xb-item--field">
+                                                <button class="xb-btn w-100">Enviar Petición</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xb-contact__shape">
+                        <img src="img/shape/cnt_shape.png" alt="">
+                    </div>
+                    <div class="xb-contact__img">
+                        <img src="img/service/contact-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-shape">
+                <div class="shape shape--1">
+                    <img data-parallax='{"y": "-90"}' src="img/shape/cnt_shape2.png" alt="">
+                </div>
+                <div class="shape shape--2">
+                    <img data-parallax='{"y": "90"}' src="img/shape/cnt_shape3.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+
+    
+       
+    </main>
+
+    <!-- footer start -->
+    <footer class="xb-footer sticky z-1 pos-rel footer-style-one pt-110 pb-110" data-bg-color="#E7E9EE">
+        <div class="container">
+            <div class="footer-cta ul_li_between">
+                <div class="footer-cta__inner ul_li mt-30">
+                    <div class="xb-icon-img style-2 ul_li mr-35">
+                        <div class="avatar">
+                            <img src="img/avatar/cta_avatar2.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="footer-cta__holder">
+                        <span>envíanos un comentario</span>
+                        <h3>info@asertar.com</h3>
+                    </div>
+                </div>
+                <div class="footer-cta__inner ul_li mt-30">
+                    <div class="footer-cta__holder text-end">
+                        <span>Llámanos directamente</span>
+                        <h3>+57 316 666 6666</h3>
+                    </div>
+                    <div class="xb-icon-img ul_li ml-35">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="avatar">
+                            <img src="img/avatar/cta_avatar3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <span class="footer-cta__line"></span>
+            </div>
+
+            <div class="footer-copyright ul_li_between mt-12">
+                <p class="mt-15">Copyright © <span id="year"></span> Todos los derechos reservados.</p>
+                <div class="footer-social ul_li mt-15">
+                    <span>Siguenos en nuestras redes :</span>
+                    <ul class="ul_li">
+                        <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-shape">
+            <div class="shape shape--1">
+                <img data-parallax='{"y": "-80"}' src="img/shape/ft_shape1.png" alt="">
+            </div>
+            <div class="shape shape--2">
+                <img data-parallax='{"y": "80"}' src="img/shape/ft_shape2.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- footer start -->
+
+</div>
+
+<!-- jquery include -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/odometer.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/animated-heading.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/theia-sticky-sidebar.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/touchspin.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/parallax-scroll.js"></script>
+<script src="js/jarallax.js"></script>
+<script src="js/easing.min.js"></script>
+<script src="js/scrollspy.js"></script>
+<script src="js/rbtools.min.js"></script>
+<script src="js/rs6.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+   document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
 </body>
+
 </html>
+
+
